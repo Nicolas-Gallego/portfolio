@@ -56,10 +56,10 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit}
             id="contact-form"
-            className="col-lg-5 col-sm-12"
+            className="col-lg-5 col-sm-10"
             method="POST"
           >
-            <div className="form-group">
+            <div className="form-group col-sm-12">
               <label htmlFor="name">Name</label>
               <input
                 name="name"
@@ -94,7 +94,7 @@ const Contact = () => {
               Submit
             </button>
           </form>
-          <div className="col-5 offset-1 ">
+          <div className="col-5 offset-1">
             <p className="following">
               Elsewhere, I can be found at the following:
             </p>

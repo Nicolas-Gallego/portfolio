@@ -1,9 +1,11 @@
 import './App.css';
+
 import About from "./components/About"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
 import Projects from "./components/Projects"
 import Scrollchor from 'react-scrollchor';
+import Test from './components/Test'
 
 
 function App() {
@@ -11,21 +13,10 @@ function App() {
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Scrollchor to="#top">
-            <a className="navbar-brand" href="#">
-              <img src={"/img/ngPicto.png"} className="logo" />
-            </a>
-          </Scrollchor>
-          <button
-              className='navbar-toggler'
-              type='button'
-              data-toggle='collapse'
-              data-target='#navbarNav'
-              aria-controls='navbarNav'
-              aria-expanded='false'
-              aria-label='Toggle navigation'>
-              <span className='navbar-toggler-icon'></span>
-            </button>
+          <a className="navbar-brand" href="#top">NG</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"><i className="fas fa-grip-lines"></i></span>
+          </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <Scrollchor to="#about" animate={{ duration: 200 }}>
@@ -43,11 +34,11 @@ function App() {
                 </li>
               </Scrollchor>
               <Scrollchor to="#projects" animate={{ duration: 100 }}>
-              <li className="nav-item">
-                <a className="nav-link custom-underline" href="#">
-                  projects
+                <li className="nav-item">
+                  <a className="nav-link custom-underline" href="#">
+                    projects
               </a>
-              </li>
+                </li>
               </Scrollchor>
               <Scrollchor to="#contact" animate={{ duration: 100 }}>
                 <li className="nav-item">
@@ -69,7 +60,8 @@ function App() {
         <Skills></Skills>
       </section>
       <section id="projects">
-      <Projects></Projects>
+        <h2>Projects</h2>
+        <Projects></Projects>
       </section>
       <section id="contact">
         <h2>Contact</h2>
